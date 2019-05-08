@@ -5,7 +5,7 @@ import java.sql.*;
 //import java.sql.DriverManager ;
 public class DatabaseConnection {
 	public static final String DBDRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver" ;
-	public static final String DBURL = "jdbc:sqlserver://localhost:1433;databasename=mldn" ;
+	public static final String DBURL = "jdbc:sqlserver://localhost:1433;databasename=fresh_Supermarket" ;
 	public static final String DBUSER = "sa" ;
 	public static final String DBPASSWORD = "127129" ;
 	private Connection conn ;
