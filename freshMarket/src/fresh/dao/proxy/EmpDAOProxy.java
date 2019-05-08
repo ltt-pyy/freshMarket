@@ -21,7 +21,7 @@ public class EmpDAOProxy implements IEmpDAO {
 	public boolean doCreate(Emp emp) throws Exception{
 		boolean flag = false ;
 		try{
-			if(this.dao.findById(emp.getEmpno()) == null){
+			if(this.dao.findById(emp.getEmpId()) == null){
 				flag = this.dao.doCreate(emp) ;
 			}
 		}catch(Exception e){
@@ -42,10 +42,10 @@ public class EmpDAOProxy implements IEmpDAO {
 		}
 		return all ;
 	}
-	public Emp findById(int empno) throws Exception{
+	public Emp findById(int empId) throws Exception{
 		Emp emp = null ;
 		try{
-			emp = this.dao.findById(empno) ;
+			emp = this.dao.findById(empId) ;
 		}catch(Exception e){
 			throw e ;
 		}finally{
