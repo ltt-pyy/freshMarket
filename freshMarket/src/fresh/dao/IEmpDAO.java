@@ -2,7 +2,7 @@ package fresh.dao ;
 import java.util.* ;
 
 
-import fresh.vo.Employee;
+import fresh.vo.Emp;
 
 public interface IEmployeeDAO {
 	public boolean doCreate(Employee employee) throws Exception ;
