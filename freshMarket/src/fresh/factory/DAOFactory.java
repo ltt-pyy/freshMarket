@@ -1,39 +1,34 @@
 package fresh.factory ;
-import fresh.dao.IuserDAO;
-import fresh.dao.proxy.userDAOProxy;
-import fresh.dao.IempolyeeDAO;
-import fresh.dao.proxy.empolyeeDAOProxy;
-import fresh.dao.IfreshDAO;
-import fresh.dao.proxy.freshDAOProxy;
-import fresh.dao.IorderDAO;
-import fresh.dao.proxy.orderDAOProxy;
-import fresh.dao.IcartDAO;
-import fresh.dao.proxy.cartDAOProxy;
+import fresh.dao.IUserDAO;
+import fresh.dao.proxy.UserDAOProxy;
+import fresh.dao.IEmpDAO;
+import fresh.dao.proxy.EmpDAOProxy;
+import fresh.dao.IFreshDAO;
+import fresh.dao.proxy.FreshDAOProxy;
+import fresh.dao.IOrderDAO;
+import fresh.dao.proxy.OrderDAOProxy;
+import fresh.dao.ICartDAO;
+import fresh.dao.proxy.CartDAOProxy;
 import fresh.dao.IAddressInfoDAO;
 import fresh.dao.proxy.AddressInfoDAOProxy;
-import fresh.dao.ItypeDAO;
-import fresh.dao.proxy.typeDAOProxy;
 
 public class DAOFactory {
-	public static IuserDAO getIuserDAOInstance() throws Exception{
-		return new userDAOProxy() ; 
+	public static IUserDAO getIUserDAOInstance() throws Exception{
+		return new UserDAOProxy() ; 
 	}
-	public static IemployeeDAO getIemployeeDAOInstance() throws Exception{
-		return new employeeDAOProxy() ;
+	public static IEmpDAO getIEmpDAOInstance() throws Exception{
+		return new EmpDAOProxy() ;
 	}
-	public static IfreshDAO getIfreshDAOInstance() throws Exception{
-		return new freshDAOProxy() ;
+	public static IFreshDAO getIFreshDAOInstance() throws Exception{
+		return new FreshDAOProxy() ;
 	}
-	public static IorderDAO getIorderDAOInstance() throws Exception{
-		return new orderDAOProxy() ;
+	public static IOrderDAO getIOrderDAOInstance() throws Exception{
+		return new OrderDAOProxy() ;
 	}
-	public static IcartDAO getIcartDAOInstance() throws Exception{
-		return new cartDAOProxy() ;
+	public static ICartDAO getICartDAOInstance() throws Exception{
+		return new CartDAOProxy() ;
 	}
 	public static IAddressInfoDAO getIAddressInfoDAOInstance() throws Exception{
 		return new AddressInfoDAOProxy() ;
-	}
-	public static ItypeDAO getItypeDAOInstance() throws Exception{
-		return new typeDAOProxy() ;
 	}
 }
