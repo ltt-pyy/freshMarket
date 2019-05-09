@@ -1,6 +1,6 @@
 <%@ page contentType="text/html" pageEncoding="utf-8"%>
-<%@ page import="fresh.vo.*"%>
-<%@ page import="fresh.factory.*"%>
+<%@ page import="book.vo.*"%>
+<%@ page import="book.factory.*"%>
 
 <
 <%	// 乱码解决
