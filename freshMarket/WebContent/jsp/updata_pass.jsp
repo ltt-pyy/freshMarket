@@ -1,5 +1,5 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="book.factory.DAOFactory,book.vo.*"%>
+<%@ page import="fresh.factory.DAOFactory,fresh.vo.*"%>
 <% 
 	request.setCharacterEncoding("utf-8") ; 
 %>
